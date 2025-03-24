@@ -1,0 +1,389 @@
+/* 
+============================
+            GERAL
+============================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+button{
+    border: none;
+    transition: .2s;
+}
+button:hover{
+    box-shadow: 0px 0px 8px #00ff08ad;
+    transform: scale(1.05);
+}
+h2.title{
+    font-size: 2rem;
+    text-align: center;
+}
+h2.title span{
+    color: #00ff08;
+}
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+.box-contact-btn button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00ff08;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+.box-social-btn button{
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* 
+============================
+            HEADER
+============================
+*/
+
+
+header{
+    padding: 40px 4%;
+
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .menu-desktop a{
+    color: #5f5f5f;
+    display: inline-block;
+    transition: .2s;
+}
+header .menu-desktop a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+header nav.menu-desktop ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* 
+============================
+        MENU MOBILE
+============================
+*/
+.menu-mobile{
+    background-color: #000;
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 20px 8%;
+    display: block;
+
+}
+.menu-mobile nav ul li a:hover{
+    background-color: #00ff08;
+    color: #000;
+}
+.menu-mobile .box-btn-close-menu{
+    padding: 20px 5%;
+}
+.menu-mobile .box-btn-close-menu i{
+    color: #00ff08;
+    font-size: 25px;
+}
+.box-btn-open-menu{
+    display: none;
+}
+.box-btn-open-menu i{
+    color: #00ff08;
+    font-size: 40px;
+}
+.overlay-menu{
+    background-color: #000000bb;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.menu-mobile.open-menu{
+    width: 70%;
+}
+.menu-mobile.open-menu ~ .overlay-menu{
+    display: block;
+}
+/* 
+============================
+        TOP OF SITE
+============================
+*/
+
+section.top-of-site{
+    padding: 40px 4%;
+    color: #fff;
+}
+section.top-of-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+section.top-of-site .box-text-top-of-site h1{
+    font-size: 42px;
+    line-height: 40px;
+}
+section.top-of-site .box-text-top-of-site h1 span{
+    color: #00ff08;
+}
+section.top-of-site .box-text-top-of-site p{
+    margin: 40px 0;
+
+}
+
+section.top-of-site .box-img-top-of-site img{
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px
+    }
+}
+
+/* 
+============================
+       ESPECIALIDADES
+============================
+*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .box-especialidade{
+    padding: 40px;
+    margin-top: 45px;
+    /* border: 2px solid #fff; */
+    border-radius: 20px;
+    transition: .2s;
+}
+.especialidades .box-especialidade:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff79;
+}
+.especialidades .box-especialidade i{
+    font-size: 70px;
+    color:#00ff08;
+}
+.especialidades .box-especialidade h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* 
+============================
+            SOBRE
+============================
+*/
+
+section.sobre{
+    padding: 80px 4%;
+}
+section.sobre .flex{
+    gap: 60px;
+    align-items: center;
+}
+
+.box-text-sobre h2{
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.box-text-sobre h2 span{
+    display: block;
+    color: #00ff08;
+}
+.box-text-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+/* 
+============================
+        PORTFÓLIO
+============================
+*/
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1a;
+}
+section.portfolio .flex{
+    justify-content: center;
+    gap: 2%;
+}
+section.portfolio h2{
+    margin-bottom: 40px;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b7;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+/* 
+============================
+        FORMULÁRIO
+============================
+*/
+
+section.section-form{
+    padding: 40px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #252525;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 20px 15px;
+}
+form textarea{
+    resize: none;
+    height: 150px;
+}
+form .box-btn-submit{
+    margin-top: 20px;
+    text-align: center;
+}
+form .box-btn-submit button{
+    padding: 15px 25px;
+    background-color: #00ff08;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* 
+============================
+           FOOTER
+============================
+*/
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1a;
+}
+footer .flex{
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 2px solid #00ff08;
+    margin-bottom: 10px;
+    
+}
+
+footer .line-footer p{
+    display: flex;
+    align-items: center;
+}
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 22px;
+    margin-right: 5px;
+}
+footer .line-footer p a{
+    color: #fff;
+    text-decoration: underline;
+}

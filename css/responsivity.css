@@ -1,0 +1,121 @@
+@media screen and (max-width: 1020px) {
+
+    /* 
+    ======================
+            GERAL
+    ======================
+    */
+    .flex {
+        flex-flow: column wrap;
+    }
+    h2.title{
+        font-size: 32px;
+        line-height: 30px;
+    }
+    /* 
+    ======================
+            HEADER
+    ======================
+    */
+    header{
+        padding: 10px 4%;
+    
+    }
+    header .menu-desktop,
+    header .box-contact-btn {
+        display: none;
+    }
+    /* 
+    ======================
+        MENU MOBILE
+    ======================
+    */
+    .box-btn-open-menu{
+        display: block;
+    }
+    /* 
+    ======================
+         TOP-OF-SITE
+    ======================
+    */
+    section.top-of-site {
+        padding: 20px 8%;
+        color: #fff;
+    }
+
+    section.top-of-site .box-text-top-of-site h1 {
+        font-size: 30px;
+    }
+
+    section.top-of-site .box-img-top-of-site img {
+        width: 100%;
+    }
+
+    section.top-of-site .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+
+    /* 
+    ======================
+        ESPECIALIDADES
+    ======================
+    */
+
+    section.especialidades {
+        padding: 40px 8%;
+    }
+    /* 
+    ======================
+            SOBRE
+    ======================
+    */
+    section.sobre{
+        padding: 80px 8%;
+    }
+    section.sobre .flex{
+        flex-direction: column-reverse;
+    }
+    section.sobre .box-social-btn{
+        text-align: center;
+    }
+    section.sobre .box-img-sobre img{
+        width: 100%;
+    }
+
+    /* 
+    ======================
+          PORTFÓLIO
+    ======================
+    */
+    section.portfolio{
+        padding: 80px 8%;
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        height: 460px;
+        margin: 0 auto;
+    }
+    section.portfolio .flex{
+        gap:30px;
+    }
+    /* 
+    ======================
+          FOOTER
+    ======================
+    */
+    footer .flex{
+        flex-flow: column wrap;
+        gap: 30px;
+    }
+    footer .line-footer{
+        text-align: center;
+    }
+    footer .line-footer p{
+        display: flex;
+        justify-content: center;
+    }
+}
