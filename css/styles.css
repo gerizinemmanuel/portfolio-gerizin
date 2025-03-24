@@ -78,6 +78,24 @@ header{
     padding: 40px 4%;
 
 }
+
+header .box-logo a h2:hover{
+    transform: scale(1.05);
+}
+header .box-logo a h2, footer .box-logo-footer h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 4px;
+    color: #fff;
+    transition: .2s;
+}
+header .box-logo a h2 span, footer .box-logo-footer h2 span{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #00ff08;
+}
 header > .interface{
     display: flex;
     align-items: center;
@@ -189,8 +207,11 @@ section.top-of-site .box-text-top-of-site p{
 }
 
 section.top-of-site .box-img-top-of-site img{
+    max-width: 500px;
     position: relative;
     animation: float 2s ease-in-out infinite alternate;
+    border-bottom-left-radius: 50%;
+    border-bottom: 2px solid #00ff08;
 }
 
 @keyframes float{
@@ -213,10 +234,12 @@ section.especialidades{
 }
 section.especialidades .flex{
     gap: 60px;
+    justify-content: center;
 }
 .especialidades .box-especialidade{
     padding: 40px;
     margin-top: 45px;
+    max-width: 400px;
     /* border: 2px solid #fff; */
     border-radius: 20px;
     transition: .2s;
@@ -261,7 +284,10 @@ section.sobre .flex{
     margin: 20px 0;
     text-align: justify;
 }
-
+.sobre img{
+    border-bottom: 2px solid #00ff08;
+    border-bottom-right-radius: 50%;
+}
 
 /* 
 ============================
@@ -308,6 +334,10 @@ section.portfolio h2{
     font-weight: 600;
     opacity: 0;
     transition: .5s;
+}
+.overlay p{
+    padding: 10%;
+    text-align: center;
 }
 .overlay:hover{
     opacity: 1;
